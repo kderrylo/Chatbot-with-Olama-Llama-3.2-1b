@@ -3,10 +3,10 @@ from langchain_ollama import ChatOllama
 from langchain_core.output_parsers import StrOutputParser
 from langchain.prompts import SystemMessagePromptTemplate, HumanMessagePromptTemplate, AIMessagePromptTemplate, ChatPromptTemplate
 
-st.title("Chatbot using Llama 3.2:1b 💬")
-st.write("Github Repository: https://github.com/kderrylo?tab=repositories")
+st.title("Chatbot using OllamaLlama 3.2:1b 💬")
+st.write("Github Repository: https://github.com/kderrylo/Chatbot-with-Olama-Llama-3.2-1b")
 
-model = ChatOllama(model="llama2", base_url="http://localhost:11434") # load model dari ollama
+model = ChatOllama(model="llama3.2:1b", base_url="http://localhost:11434") # load model dari ollama
 
 # spesifikasi interaksi dengan AI assistant
 system_message = SystemMessagePromptTemplate.from_template("You are AI assistant, explain things in 1 sentence")
